@@ -8,6 +8,7 @@ main {
 
   background-color: lightgray;
   padding: 10px;
+  font-family: Arial, sans-serif;
 }
 
 .container {
@@ -146,10 +147,27 @@ button:disabled {
   background-color: white;
 }
 
+.product-item__controls {
+  width: 30%;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
 .product-item__controls-buy {
   color: #666666;
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-weight: bold;
+}
+
+.product-item__controls-remove {
+  fill: white;
+  height: 40px;
+}
+
+.product-item__controls-remove svg {
+  width: 20px;
+  height: 20px;
 }
 
 @media (max-width: 500px) {

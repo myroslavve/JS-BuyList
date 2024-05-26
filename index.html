@@ -6,92 +6,109 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
   <body>
-	<main>
-		<section class="items-list container">
-			<div class="add-product-wrapper">
-				<div class="add-product">
-					<input type="text" id="add-product-input" class="add-product__input" placeholder="Name of the product">
-					<button class="add-product__button button-info button">Add</button>
-				</div>
-			</div>
-			<div class="product-item bought">
-			  <input class="product-item__name-input" value="Apple" disabled />
-			  <div class="product-item__amount-wrapper">
-				<span class="product-item__amount" type="number">1</span>
-			  </div>
-			  <div class="product-item__controls">
-				<button class="product-item__controls-buy">Not bought</button>
-			  </div>
-			</div>
-			<div class="product-item">
-				<input class="product-item__name-input" value="Banana" />
-				<div class="product-item__amount-wrapper">
-				  <button
-					class="product-item__amount-button button-error button"
-				  >
-					-
-				  </button>
-				  <span class="product-item__amount">2</span>
-				  <button
-					class="product-item__amount-button button-success button"
-				  >
-					+
-				  </button>
-				</div>
-				<div class="product-item__controls">
-					<button class="product-item__controls-buy">Bought</button>
-					<button class="product-item__controls-remove button-error">
-						<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
-					</button>
-				</div>
-			  </div>
-			  <div class="product-item">
-				<input class="product-item__name-input" value="Milk" />
-				<div class="product-item__amount-wrapper">
-				  <button
-					class="product-item__amount-button button-error button"
-					disabled
-				  >
-					-
-				  </button>
-				  <span class="product-item__amount">1</span>
-				  <button
-					class="product-item__amount-button button-success button"
-				  >
-					+
-				  </button>
-				</div>
-				<div class="product-item__controls">
-					<button class="product-item__controls-buy">Bought</button>
-					<button class="product-item__controls-remove button-error">
-						<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
-					</button>
-				</div>
-			  </div>
-		  </section>
-		  <aside class="items-summary container">
-			<h1>Left</h1>
-			<hr class="separator">
-			<ul class="items-summary__list">
-			  <li class="items-summary__item">
-				<span class="items-summary__item-name">Banana</span>
-				<span class="items-summary__item-amount">2</span>
-			  </li>
-			  <li class="items-summary__item">
-				<span class="items-summary__item-name">Milk</span>
-				<span class="items-summary__item-amount">1</span>
-			  </li>
-			</ul>
-			<hr class="separator">
-			<h1>Bought</h1>
-			<hr class="separator">
-			<ul class="items-summary__list bought">
-			  <li class="items-summary__item">
-				<span class="items-summary__item-name">Apple</span>
-				<span class="items-summary__item-amount">1</span>
-			  </li>
-			</ul>
-		  </aside>
-		</body>
-	</main>
+    <main>
+      <section class="items-list container">
+        <div class="add-product-wrapper">
+          <div class="add-product">
+            <input
+              type="text"
+              id="add-product-input"
+              class="add-product__input"
+              placeholder="Name of the product"
+            />
+            <button class="add-product__button button-info button">Add</button>
+          </div>
+        </div>
+        <div class="product-item bought">
+          <input class="product-item__name-input" value="Apple" disabled />
+          <div class="product-item__amount-wrapper">
+            <span class="product-item__amount" type="number">1</span>
+          </div>
+          <div class="product-item__controls">
+            <button class="product-item__controls-buy">Not bought</button>
+          </div>
+        </div>
+        <div class="product-item">
+          <input class="product-item__name-input" value="Banana" />
+          <div class="product-item__amount-wrapper">
+            <button class="product-item__amount-button button-error button">
+              -
+            </button>
+            <span class="product-item__amount">2</span>
+            <button class="product-item__amount-button button-success button">
+              +
+            </button>
+          </div>
+          <div class="product-item__controls">
+            <button class="product-item__controls-buy">Bought</button>
+            <button class="product-item__controls-remove button-error">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid"
+                viewBox="0 0 384 512"
+              >
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-item">
+          <input class="product-item__name-input" value="Milk" />
+          <div class="product-item__amount-wrapper">
+            <button
+              class="product-item__amount-button button-error button"
+              disabled
+            >
+              -
+            </button>
+            <span class="product-item__amount">1</span>
+            <button class="product-item__amount-button button-success button">
+              +
+            </button>
+          </div>
+          <div class="product-item__controls">
+            <button class="product-item__controls-buy">Bought</button>
+            <button class="product-item__controls-remove button-error">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid"
+                viewBox="0 0 384 512"
+              >
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <aside class="items-summary container">
+        <h1>Left</h1>
+        <hr class="separator" />
+        <ul class="items-summary__list">
+          <li class="items-summary__item">
+            <span class="items-summary__item-name">Banana</span>
+            <span class="items-summary__item-amount">2</span>
+          </li>
+          <li class="items-summary__item">
+            <span class="items-summary__item-name">Milk</span>
+            <span class="items-summary__item-amount">1</span>
+          </li>
+        </ul>
+        <hr class="separator" />
+        <h1>Bought</h1>
+        <hr class="separator" />
+        <ul class="items-summary__list bought">
+          <li class="items-summary__item">
+            <span class="items-summary__item-name">Apple</span>
+            <span class="items-summary__item-amount">1</span>
+          </li>
+        </ul>
+      </aside>
+    </main>
+  </body>
 </html>

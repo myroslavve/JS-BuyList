@@ -170,7 +170,7 @@ button:disabled {
   height: 20px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   main {
     flex-direction: column;
     gap: 10px;

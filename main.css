@@ -38,15 +38,13 @@ button {
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
-  /* box-shadow: 0 4px 0 var(--box-shadow-color); */
-  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 0 var(--box-shadow-color);
   color: white;
 }
 
 button:active {
-  /* box-shadow: 0 2px 0 var(--box-shadow-color); */
-  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.2);
-  /* transform: translateY(2px); */
+  box-shadow: 0 2px 0 var(--box-shadow-color);
+  transform: translateY(2px);
 }
 
 button:disabled {
@@ -96,8 +94,10 @@ button:disabled {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border: 1px solid rgba(0, 0, 0, 0); /* add transparent border to match height of the input */
-  padding: 10px var(--horizontal-padding);
-  height: 100%;
+  padding: 10px var(--horizontal-padding) 6px var(--horizontal-padding);
+  height: calc(
+    100% - 4px
+  ); /* to align box shadow with the bottom of the input */
   width: 15%;
   font-weight: bold;
 }
@@ -148,7 +148,7 @@ button:disabled {
 
 .product-item__controls-buy {
   color: #666666;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   font-weight: bold;
 }
 

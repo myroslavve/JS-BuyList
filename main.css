@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow: hidden; /* for the badge */
+}
+
 main {
   display: flex;
   justify-content: space-between;
@@ -223,6 +227,38 @@ hr.separator {
   text-decoration: line-through;
 }
 
+.badge {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  padding: 10px 20px;
+  transform: translateY(55px);
+  transition: all 0.3s ease;
+
+  background-color: #a020d2;
+  color: white;
+  font-size: 18px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.badge:hover {
+  transform: translateY(0);
+  background-color: #4509d1;
+}
+
+.badge span {
+  font-size: 14px;
+}
+
+.badge p {
+  margin: 0;
+}
+
+.badge p:first-child {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 640px) {
   main {
     flex-direction: column;
@@ -231,5 +267,16 @@ hr.separator {
 
   .container {
     width: 100%;
+  }
+}
+
+@media print {
+  .badge {
+    border: 1px solid black;
+    transform: translate(0);
+  }
+
+  .badge p:first-child {
+    display: none;
   }
 }

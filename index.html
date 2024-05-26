@@ -16,7 +16,12 @@
               class="add-product__input"
               placeholder="Name of the product"
             />
-            <button class="add-product__button button-info button">Add</button>
+            <button
+              data-tooltip="Add to the list"
+              class="add-product__button button-info button"
+            >
+              Add
+            </button>
           </div>
         </div>
         <div class="product-item bought">
@@ -25,23 +30,42 @@
             <span class="product-item__amount" type="number">1</span>
           </div>
           <div class="product-item__controls">
-            <button class="product-item__controls-buy">Not bought</button>
+            <button
+              data-tooltip="Unbuy this item"
+              class="product-item__controls-buy"
+            >
+              Not bought
+            </button>
           </div>
         </div>
         <div class="product-item">
           <input class="product-item__name-input" value="Banana" />
           <div class="product-item__amount-wrapper">
-            <button class="product-item__amount-button button-error button">
+            <button
+              data-tooltip="Decrease amount"
+              class="product-item__amount-button button-error button"
+            >
               -
             </button>
             <span class="product-item__amount">2</span>
-            <button class="product-item__amount-button button-success button">
+            <button
+              data-tooltip="Increase amount"
+              class="product-item__amount-button button-success button"
+            >
               +
             </button>
           </div>
           <div class="product-item__controls">
-            <button class="product-item__controls-buy">Bought</button>
-            <button class="product-item__controls-remove button-error">
+            <button
+              data-tooltip="Buy this item"
+              class="product-item__controls-buy"
+            >
+              Bought
+            </button>
+            <button
+              data-tooltip="Delete item from list"
+              class="product-item__controls-remove button-error"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="xMidYMid"
@@ -59,19 +83,31 @@
           <input class="product-item__name-input" value="Milk" />
           <div class="product-item__amount-wrapper">
             <button
+              data-tooltip="Decrease amount"
               class="product-item__amount-button button-error button"
               disabled
             >
               -
             </button>
             <span class="product-item__amount">1</span>
-            <button class="product-item__amount-button button-success button">
+            <button
+              data-tooltip="Increase amount"
+              class="product-item__amount-button button-success button"
+            >
               +
             </button>
           </div>
           <div class="product-item__controls">
-            <button class="product-item__controls-buy">Bought</button>
-            <button class="product-item__controls-remove button-error">
+            <button
+              data-tooltip="Buy this item"
+              class="product-item__controls-buy"
+            >
+              Bought
+            </button>
+            <button
+              data-tooltip="Delete item from list"
+              class="product-item__controls-remove button-error"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="xMidYMid"

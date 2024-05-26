@@ -1,16 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head lang="uk">
-    <meta charset="UTF-8">
-    <title>My Page</title>
-
-
+  <head lang="uk">
+    <meta charset="UTF-8" />
+    <title>Buy list</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
-</head>
-<body>
-	<span class="product-item">
-		Apple
-		<span class="amount">4</span>
-	</span>
-</body>
+  </head>
+  <body>
+	<main>
+		<section class="items-list container">
+			<div class="add-product-wrapper">
+				<div class="add-product">
+					<input type="text" id="add-product-input" class="add-product__input" placeholder="Name of the product">
+					<button class="add-product__button button-info button">Add</button>
+				</div>
+			</div>
+			<div class="product-item bought">
+			  <input class="product-item__name-input" value="Apple" disabled />
+			  <div class="product-item__amount-wrapper">
+				<span class="product-item__amount" type="number">1</span>
+			  </div>
+			  <div class="product-item__controls">
+				<button class="product-item__controls-buy">Not bought</button>
+			  </div>
+			</div>
+			<div class="product-item">
+				<input class="product-item__name-input" value="Banana" />
+				<div class="product-item__amount-wrapper">
+				  <button
+					class="product-item__amount-button button-error button"
+				  >
+					-
+				  </button>
+				  <span class="product-item__amount">2</span>
+				  <button
+					class="product-item__amount-button button-success button"
+				  >
+					+
+				  </button>
+				</div>
+				<div class="product-item__controls">
+					<button class="product-item__controls-buy">Bought</button>
+					<button class="product-item__controls-remove button-error">&nbsp;</button>
+				</div>
+			  </div>
+			  <div class="product-item">
+				<input class="product-item__name-input" value="Milk" />
+				<div class="product-item__amount-wrapper">
+				  <button
+					class="product-item__amount-button button-error button"
+					disabled
+				  >
+					-
+				  </button>
+				  <span class="product-item__amount">1</span>
+				  <button
+					class="product-item__amount-button button-success button"
+				  >
+					+
+				  </button>
+				</div>
+				<div class="product-item__controls">
+					<button class="product-item__controls-buy">Bought</button>
+					<button class="product-item__controls-remove button-error">&nbsp;</button>
+				</div>
+			  </div>
+		  </section>
+		  <aside class="bought-items container">
+			<h2>Left</h2>
+			<ul class="bought-items__list">
+			  <li class="bought-items__item">
+				<span class="bought-items__item-name">Apple</span>
+				<span class="bought-items__item-amount">1</span>
+			  </li>
+			</ul>
+			<h2>Bought</h2>
+			<ul class="bought-items__list">
+			  <li class="bought-items__item">
+				<span class="bought-items__item-name">Apple</span>
+				<span class="bought-items__item-amount">1</span>
+			  </li>
+			</ul>
+		  </aside>
+		</body>
+	</main>
 </html>

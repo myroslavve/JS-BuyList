@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow: hidden; /* for the badge */
-}
-
 main {
   display: flex;
   justify-content: space-between;
@@ -250,7 +246,7 @@ hr.separator {
 }
 
 .badge {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 20px;
   padding: 10px 20px;

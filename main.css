@@ -177,6 +177,11 @@ hr.separator {
   text-decoration: line-through;
 }
 
+.product-item.bought .product-item__amount-button,
+.product-item.bought .product-item__controls-remove {
+  display: none;
+}
+
 .product-item__name-input:disabled {
   background-color: white;
 }
